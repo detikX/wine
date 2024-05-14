@@ -1,0 +1,118 @@
+.bg-pojok-kiri {
+    position: absolute;
+    left: 15%;
+    z-index: 2;
+    top: 0;
+    width: 100px;
+    opacity: 0.2;
+    height: auto;
+    @media screen and (max-width: 768px) {
+        left: -8%;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.anim {
+    position: absolute;
+    z-index: 2;
+    // inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+    @media screen and (max-width: 768px) {
+        opacity: 0.8;
+        top: 30%;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.coba {
+    position: fixed;
+    z-index: 2;
+    // inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    @media screen and (max-width: 768px) {
+        opacity: 0.8;
+        // top: 50%;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+.data {
+    .hello {
+        p {
+            color: #333;
+        }
+    }
+    .top-mt {
+        margin-top: -30vh;
+    }
+    .img {
+        width: auto;
+        height: 300px;
+        margin-bottom: 16px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .imgs {
+        width: 100%;
+        height: 350px;
+        position: absolute;
+        top: 10%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .bukti {
+        width: 100%;
+        height: 50%;
+        border: 4px solid white;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .sumber {
+        color: #fbafef;
+        font-size: 0.9rem;
+        margin: 8px 0 24px;
+        div {
+            line-height: 1.2rem;
+            font-family: "Playfair Display";
+        }
+    }
+}
+
+section {
+    p {
+        color: #fafafa;
+    }
+}
