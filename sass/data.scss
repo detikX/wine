@@ -99,7 +99,7 @@
             inset: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to top, #4e2638, transparent, #4e2638);
+            background: linear-gradient(to top, #4e2638, rgba(#4e2638, 0.5), #4e2638);
         }
     }
     .hello {
