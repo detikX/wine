@@ -87,6 +87,10 @@
     padding: 0;
 }
 .data {
+    .wraps {
+        margin-bottom: 8px;
+        color: white;
+    }
     .lawyers {
         width: 460px;
         height: auto;
@@ -359,6 +363,34 @@ section {
         &.ina {
             right: 0;
             bottom: 0;
+        }
+    }
+}
+
+.creditxx {
+    border-top: 1px dashed white;
+    min-height: auto;
+    .wrap-detikx {
+        background: #442030;
+        padding: 16px;
+        border-radius: 16px;
+    }
+    .big-job {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        color: white;
+    }
+    .big-name {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        color: white;
+    }
+    .wraps {
+        display: block;
+        margin-bottom: 4px !important;
+        div {
+            display: inline-block;
+            font-family: "Source Code Pro";
         }
     }
 }
