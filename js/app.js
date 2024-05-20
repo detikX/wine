@@ -20,4 +20,4 @@ $('.slider-bukti').slick({
 
 
 $(".data .wrap-detikx p").attr({ "data-aos": "fade-in", "data-aos-delay": "200", "data-aos-duration": "300" });
-$(".data .topx").attr({ "data-aos": "fade-left", "data-aos-delay": "2500", "data-aos-duration": "500" });
+$(".data .topx").attr({ "data-aos": "fade-left", "data-aos-delay": "2000", "data-aos-duration": "500" });
