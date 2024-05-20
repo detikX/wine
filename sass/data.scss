@@ -82,7 +82,67 @@
         object-fit: contain;
     }
 }
+.min-auto {
+    min-height: auto;
+    padding: 0;
+}
 .data {
+    .lawyers {
+        width: 460px;
+        height: auto;
+        // background: #4e2638;
+        padding: 16px 8px;
+        margin: 0 auto;
+        // border: 2px solid white;
+        @media screen and (max-width: 768px) {
+            width: auto;
+            padding: 8px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .fbi {
+        position: relative;
+        width: 420px;
+        top: 25vh;
+        height: 380px;
+        margin: 0 auto 16px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 9;
+            height: 10px;
+            width: 100%;
+            background: #331221;
+            // background: linear-gradient(to top, #4e2638, transparent);
+        }
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            // height: auto;
+            height: 300px;
+        }
+        .img-f {
+            &.topx {
+                z-index: 8;
+            }
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: auto;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
     &.kotak {
         &::before {
             content: "";
@@ -99,7 +159,7 @@
             inset: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to top, #4e2638, rgba(#4e2638, 0.5), #4e2638);
+            background: linear-gradient(to top, #4e2638, rgba(#4e2638, 0.7), #4e2638);
         }
     }
     .hello {
