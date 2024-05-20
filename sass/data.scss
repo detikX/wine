@@ -278,3 +278,87 @@ section {
         object-fit: contain;
     }
 }
+
+.wraping {
+    width: 100%;
+    height: 240px;
+    position: relative;
+    margin-bottom: 16px;
+    @media screen and (max-width: 768px) {
+        height: 160px;
+    }
+
+    @keyframes MoveUpDown {
+        0% {
+            bottom: 80px;
+            left: 0;
+            opacity: 0;
+        }
+        10% {
+            bottom: 80px;
+            left: 0;
+            opacity: 0;
+        }
+        20% {
+            bottom: 80px;
+            left: 0;
+            opacity: 1;
+        }
+        50% {
+            bottom: 140px;
+            left: 30%;
+        }
+        90% {
+            bottom: 60px;
+            left: 70%;
+            opacity: 1;
+        }
+        100% {
+            bottom: 60px;
+            left: 70%;
+            opacity: 0;
+        }
+    }
+    .pesawat {
+        position: absolute;
+        animation: MoveUpDown 5s linear infinite;
+        left: 0;
+        bottom: 80px;
+        opacity: 0;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        @media screen and (max-width: 768px) {
+            width: 90px;
+            bottom: 80px;
+        }
+    }
+    .bendera {
+        position: absolute;
+        width: 120px;
+        height: auto;
+        @media screen and (max-width: 768px) {
+            width: 60px;
+        }
+        .name {
+            font-size: 1rem;
+            color: white;
+            text-align: center;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        &.usa {
+            left: 0;
+            bottom: 0;
+        }
+        &.ina {
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
